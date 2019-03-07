@@ -23,7 +23,7 @@ class TabLink {
     
     // Using a loop or the forEach method remove the 'tabs-link-selected' class from all of the links
      links.forEach(link => {
-       console.log(link)
+       
         link.classList.remove('tabs-link-selected')
         
      });
@@ -51,6 +51,7 @@ class TabItem {
      
     // Add a class named "tabs-item-selected" to this element
     this.element.classList.add('tabs-item-selected');
+    TweenMax.to(this.element, 3 , {opacity:1})
   }
 }
 
